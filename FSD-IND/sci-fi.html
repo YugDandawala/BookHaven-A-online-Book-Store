@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven - Your Online Bookstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS\fiction.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="height: 90px;">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: azure;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <img src="https://placehold.co/50x42/000000/FFFFFF?text=BH" style="height: 45px;width:50px;position:relative;right: 15px;border-radius: 10px;">BookHaven
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex mx-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search books...">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Sci-Fi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index2.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="genresDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genresDropdown">
+                            <li><a class="dropdown-item" href="fiction.html">Fiction</a></li>
+                            <li><a class="dropdown-item" href="fantasy.html">Fantasy</a></li>
+                            <li><a class="dropdown-item" href="mystery.html">Mystery</a></li>
+                            <li><a class="dropdown-item" href="sci-fi.html">Sci-Fi</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="bi bi-cart3"></i>
+                            <span id="cart-count" class="badge bg-danger">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <section id="scifiseller" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Bestselling Sci-Fi Books</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+                <!-- Books will be shown here -->
+            </div>
+        </div>
+    </section><br>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About BookHaven</h5>
+                    <p>Your one-stop destination for all your reading needs. Discover millions of eBooks, audiobooks,
+                        and more.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p>Email: info@bookhaven.com</p>
+                        <p>Phone: (555) 123-4567</p>
+                        <p>Address: 123 Book Street, Reading City, RC 12345</p>
+                    </address>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.x.com" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com" class="text-light me-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/books-common.js"></script>
+    <script src="JS\sci-fi.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", displaySciFiSellers());</script>
+</body>
+
+</html>
